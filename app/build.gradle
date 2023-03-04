@@ -1,0 +1,74 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
+}
+
+android {
+    compileSdkVersion config.compileSdkVersion
+    buildFeatures {
+        viewBinding true
+    }
+    defaultConfig {
+        applicationId config.applicationId
+        minSdkVersion config.minSdkVersion
+        targetSdkVersion config.compileSdkVersion
+        versionCode config.versionCode
+        versionName config.versionName
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    kotlinOptions {
+        jvmTarget = '11'
+    }
+    packagingOptions {
+        exclude "DebugProbesKt.bin"
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation libraries.kotlin
+    implementation librariesAndroidx.core
+    implementation librariesAndroidx.appcompat
+    implementation libraries.material
+    implementation librariesAndroidx.constraintlayout
+    implementation libraries.hilt
+    kapt libraries.hiltAndroidCompiler
+    kapt librariesAndroidx.hiltCompiler
+    implementation librariesAndroidx.multidex
+    implementation librariesAndroidx.lifecycle
+    implementation librariesAndroidx.lifecycleViewModel
+    implementation librariesAndroidx.liveData
+    implementation librariesAndroidx.fragment
+    implementation librariesAndroidx.lifecycleKTX
+    implementation librariesAndroidx.navigationFragment
+    implementation librariesAndroidx.navigationUI
+    implementation librariesAndroidx.navigationFragmentKTX
+    implementation librariesAndroidx.navigationUIKTX
+    implementation libraries.coroutinesCore
+    implementation libraries.coroutinesAndroid
+    implementation libraries.gson
+    implementation librariesAndroidx.recyclerview
+    implementation libraries.clock
+    implementation libraries.persianDate
+
+    testImplementation librariesTest.unitTest
+    androidTestImplementation librariesAndroidxTest.junit
+    androidTestImplementation librariesAndroidxTest.espresso
+    androidTestImplementation librariesTest.hilt
+    kaptAndroidTest librariesTest.hiltAndroidCompiler
+    kaptAndroidTest librariesTest.hiltCompiler
+}

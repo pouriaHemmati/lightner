@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#03A9F4</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="switchTrackNormal">#2196F3</color>
+    <color name="switchTrackActive">#2196F3</color>
+    <color name="switchTrackDisable">#333333</color>
+    <color name="switchThumbDisable">#FFFFFF</color>
+    <color name="switchThumbActive">#FFFFFF</color>
+    <color name="switchThumbNormal">#FFFFFF</color>
+    <color name="yellow_radio">#e5ca33</color>
+    <color name="tab_bg_on">#2196F3</color>
+    <color name="light_black">#171112</color>
+    <color name="header">#171112</color>
+    <color name="txt_percent">#FFB300</color>
+</resources>
