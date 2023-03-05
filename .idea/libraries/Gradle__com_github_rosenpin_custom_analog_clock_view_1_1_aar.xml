@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.rosenpin:custom-analog-clock-view:1.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/fd6113ec9fb53cd1436c85da55362af0/transformed/jetified-custom-analog-clock-view-1.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/fd6113ec9fb53cd1436c85da55362af0/transformed/jetified-custom-analog-clock-view-1.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/fd6113ec9fb53cd1436c85da55362af0/transformed/jetified-custom-analog-clock-view-1.1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.rosenpin/custom-analog-clock-view/1.1/c280574c89bec26f451de744d6cf2fa61677c7eb/custom-analog-clock-view-1.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.rosenpin/custom-analog-clock-view/1.1/31f7e40463d79c2649c6550eb0f118c18eaa826e/custom-analog-clock-view-1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

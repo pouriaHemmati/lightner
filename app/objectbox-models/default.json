@@ -1,0 +1,81 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:7284690873140969366",
+      "lastPropertyId": "7:4139248268335957245",
+      "name": "VocabularyModel",
+      "properties": [
+        {
+          "id": "1:7930248139803874033",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:6802195676595549865",
+          "name": "germanVocabulary",
+          "type": 9
+        },
+        {
+          "id": "3:8086052749674962087",
+          "name": "persianVocabulary",
+          "type": 9
+        },
+        {
+          "id": "4:462537143868466097",
+          "name": "englishVocabulary",
+          "type": 9
+        },
+        {
+          "id": "6:5043844003608121996",
+          "name": "lessonId",
+          "type": 6
+        },
+        {
+          "id": "7:4139248268335957245",
+          "name": "vocabularyId",
+          "indexId": "1:2111600722831465873",
+          "type": 11,
+          "flags": 520,
+          "relationTarget": "LessonModel"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:3381950894166756660",
+      "lastPropertyId": "2:628659631709087876",
+      "name": "LessonModel",
+      "properties": [
+        {
+          "id": "1:1477531588989779209",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:628659631709087876",
+          "name": "lessonName",
+          "type": 9
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "2:3381950894166756660",
+  "lastIndexId": "1:2111600722831465873",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [
+    8075940350559255153
+  ],
+  "retiredRelationUids": [],
+  "version": 1
+}

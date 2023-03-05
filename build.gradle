@@ -32,13 +32,17 @@ buildscript {
                 gson              : '2.10.1',
                 recyclerview      : '1.2.1',
                 persianDate       : '1.1',
-                clock             : '1.1'
+                clock             : '1.1',
+                objectbox         : '3.5.1',
+                sdp               : '1.0.6',
+                ssp               : '1.0.6',
         ]
 
         classPath = [
-                gradle: "com.android.tools.build:gradle:$versions.gradle",
-                kotlin: "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin",
-                hilt  : "com.google.dagger:hilt-android-gradle-plugin:$versions.hilt"
+                gradle   : "com.android.tools.build:gradle:$versions.gradle",
+                kotlin   : "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin",
+                hilt     : "com.google.dagger:hilt-android-gradle-plugin:$versions.hilt",
+                objectbox: "io.objectbox:objectbox-gradle-plugin:$versions.objectbox"
         ]
 
         libraries = [
@@ -51,6 +55,8 @@ buildscript {
                 gson               : "com.google.code.gson:gson:$versions.gson",
                 persianDate        : "com.github.samanzamani:PersianDate:$versions.persianDate",
                 clock              : "com.github.rosenpin:custom-analog-clock-view:$versions.clock",
+                sdp                : "com.intuit.sdp:sdp-android:$versions.sdp",
+                ssp                : "com.intuit.ssp:ssp-android:$versions.ssp",
         ]
 
         librariesAndroidx = [
@@ -69,6 +75,7 @@ buildscript {
                 navigationFragmentKTX: "androidx.navigation:navigation-fragment-ktx:$versions.navigation",
                 navigationUIKTX      : "androidx.navigation:navigation-ui-ktx:$versions.navigation",
                 recyclerview         : "androidx.recyclerview:recyclerview:$versions.recyclerview",
+                objectbox            : "io.objectbox:objectbox-kotlin:$versions.objectbox"
         ]
 
         librariesTest = [
@@ -94,6 +101,7 @@ buildscript {
         classpath "com.android.tools.build:gradle:7.2.2"
         classpath classPath.kotlin
         classpath classPath.hilt
+        classpath classPath.objectbox
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }

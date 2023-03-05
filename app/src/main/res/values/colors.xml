@@ -18,4 +18,5 @@
     <color name="light_black">#171112</color>
     <color name="header">#171112</color>
     <color name="txt_percent">#FFB300</color>
+    <color name="background">#9B29E6</color>
 </resources>

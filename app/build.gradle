@@ -3,6 +3,8 @@ plugins {
     id 'kotlin-android'
     id 'kotlin-kapt'
     id 'dagger.hilt.android.plugin'
+    id 'io.objectbox'
+
 }
 
 android {
@@ -45,30 +47,39 @@ dependencies {
     implementation librariesAndroidx.appcompat
     implementation libraries.material
     implementation librariesAndroidx.constraintlayout
-    implementation libraries.hilt
-    kapt libraries.hiltAndroidCompiler
-    kapt librariesAndroidx.hiltCompiler
+    implementation librariesAndroidx.fragment
+    implementation librariesAndroidx.recyclerview
     implementation librariesAndroidx.multidex
+    // livedata
+    implementation librariesAndroidx.liveData
+    // lifecycle
     implementation librariesAndroidx.lifecycle
     implementation librariesAndroidx.lifecycleViewModel
-    implementation librariesAndroidx.liveData
-    implementation librariesAndroidx.fragment
     implementation librariesAndroidx.lifecycleKTX
+    // coroutines
+    implementation libraries.coroutinesCore
+    implementation libraries.coroutinesAndroid
+    // gson
+    implementation libraries.gson
+   // navigation
     implementation librariesAndroidx.navigationFragment
     implementation librariesAndroidx.navigationUI
     implementation librariesAndroidx.navigationFragmentKTX
     implementation librariesAndroidx.navigationUIKTX
-    implementation libraries.coroutinesCore
-    implementation libraries.coroutinesAndroid
-    implementation libraries.gson
-    implementation librariesAndroidx.recyclerview
+    // clock persian
     implementation libraries.clock
     implementation libraries.persianDate
-
-    testImplementation librariesTest.unitTest
-    androidTestImplementation librariesAndroidxTest.junit
-    androidTestImplementation librariesAndroidxTest.espresso
+    // hilt
+    implementation libraries.hilt
+    kapt libraries.hiltAndroidCompiler
+    kapt librariesAndroidx.hiltCompiler
     androidTestImplementation librariesTest.hilt
     kaptAndroidTest librariesTest.hiltAndroidCompiler
     kaptAndroidTest librariesTest.hiltCompiler
+    // object box
+    implementation librariesAndroidx.objectbox
+    // dimens
+    implementation libraries.ssp
+    implementation libraries.sdp
+
 }
