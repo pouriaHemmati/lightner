@@ -10,7 +10,8 @@ data class VocabularyModel(
     var lessonId : Long = 0,
     var germanVocabulary : String = "",
     var persianVocabulary : String = "",
-    var englishVocabulary : String? = null
+    var englishVocabulary : String? = null,
+    var completed : Boolean = false,
 )
 {
     lateinit var vocabulary: ToOne<LessonModel>

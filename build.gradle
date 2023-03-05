@@ -75,7 +75,8 @@ buildscript {
                 navigationFragmentKTX: "androidx.navigation:navigation-fragment-ktx:$versions.navigation",
                 navigationUIKTX      : "androidx.navigation:navigation-ui-ktx:$versions.navigation",
                 recyclerview         : "androidx.recyclerview:recyclerview:$versions.recyclerview",
-                objectbox            : "io.objectbox:objectbox-kotlin:$versions.objectbox"
+                objectbox            : "io.objectbox:objectbox-kotlin:$versions.objectbox",
+                objectbrowser        : "io.objectbox:objectbox-android-objectbrowser:$versions.objectbox",
         ]
 
         librariesTest = [

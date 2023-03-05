@@ -5,7 +5,7 @@
   "entities": [
     {
       "id": "1:7284690873140969366",
-      "lastPropertyId": "7:4139248268335957245",
+      "lastPropertyId": "8:186015803573556223",
       "name": "VocabularyModel",
       "properties": [
         {
@@ -41,13 +41,18 @@
           "type": 11,
           "flags": 520,
           "relationTarget": "LessonModel"
+        },
+        {
+          "id": "8:186015803573556223",
+          "name": "completed",
+          "type": 1
         }
       ],
       "relations": []
     },
     {
       "id": "2:3381950894166756660",
-      "lastPropertyId": "2:628659631709087876",
+      "lastPropertyId": "3:8891479064501998087",
       "name": "LessonModel",
       "properties": [
         {
@@ -60,6 +65,11 @@
           "id": "2:628659631709087876",
           "name": "lessonName",
           "type": 9
+        },
+        {
+          "id": "3:8891479064501998087",
+          "name": "completed",
+          "type": 1
         }
       ],
       "relations": []

@@ -21,7 +21,7 @@ class LessonBox constructor(
         box.put(lessons)
     }
 
-     fun getAllLessons(): List<LessonModel> {
+     fun getAllLessons(): List<LessonModel>? {
          return box.query {
              this.order(LessonModel_.id,QueryBuilder.DESCENDING)
          }.find()
@@ -29,7 +29,6 @@ class LessonBox constructor(
     fun removeAll() {
         box.removeAll()
     }
-
 
 //    fun getPersonDataByCaseNumber(caseNumber: Long) =
 //        box.query().equal(Person_.caseNumber, caseNumber).build().findFirst()

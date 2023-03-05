@@ -5,7 +5,7 @@
   "entities": [
     {
       "id": "1:7284690873140969366",
-      "lastPropertyId": "5:8075940350559255153",
+      "lastPropertyId": "7:4139248268335957245",
       "name": "VocabularyModel",
       "properties": [
         {
@@ -30,9 +30,17 @@
           "type": 9
         },
         {
-          "id": "5:8075940350559255153",
-          "name": "idLesson",
+          "id": "6:5043844003608121996",
+          "name": "lessonId",
           "type": 6
+        },
+        {
+          "id": "7:4139248268335957245",
+          "name": "vocabularyId",
+          "indexId": "1:2111600722831465873",
+          "type": 11,
+          "flags": 520,
+          "relationTarget": "LessonModel"
         }
       ],
       "relations": []
@@ -58,14 +66,16 @@
     }
   ],
   "lastEntityId": "2:3381950894166756660",
-  "lastIndexId": "0:0",
+  "lastIndexId": "1:2111600722831465873",
   "lastRelationId": "0:0",
   "lastSequenceId": "0:0",
   "modelVersion": 5,
   "modelVersionParserMinimum": 5,
   "retiredEntityUids": [],
   "retiredIndexUids": [],
-  "retiredPropertyUids": [],
+  "retiredPropertyUids": [
+    8075940350559255153
+  ],
   "retiredRelationUids": [],
   "version": 1
 }

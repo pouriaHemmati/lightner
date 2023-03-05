@@ -10,6 +10,7 @@ data class LessonModel(
     @Id
     var id : Long = 0,
     var lessonName : String = "",
+    var completed : Boolean = false,
 )
 {
     @Backlink(to = "vocabulary")
