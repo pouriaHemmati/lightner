@@ -2,7 +2,6 @@ package com.poudean.lightner.ui.splash
 
 import androidx.lifecycle.ViewModel
 import com.poudean.lightner.db.ObjectBox
-import com.poudean.lightner.db.models.MyObjectBox
 import com.poudean.lightner.utils.getProp
 import com.poudean.lightner.utils.setProp
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -16,6 +15,8 @@ class SplashViewModel @Inject constructor(private val objectBox: ObjectBox) : Vi
     val haveLesson = getProp(_haveLesson)
     init {
         _haveLesson.postValue(objectBox.lessonBox.getAllLessons()?.size!! > 0 )
+
+
     }
 
     fun insertData(){

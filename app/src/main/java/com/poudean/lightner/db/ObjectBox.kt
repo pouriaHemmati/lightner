@@ -2,6 +2,7 @@ package com.poudean.lightner.db
 
 import android.content.Context
 import android.util.Log
+import com.poudean.lightner.db.boxes.DBDetailsBox
 import com.poudean.lightner.db.boxes.LessonBox
 import com.poudean.lightner.db.boxes.VocabularyBox
 import com.poudean.lightner.db.models.MyObjectBox
@@ -21,6 +22,8 @@ class ObjectBox(
     var vocabularyBox : VocabularyBox
     private set
 
+    var dbDetails : DBDetailsBox
+    private set
 
     init {
         boxStore = MyObjectBox.builder()
@@ -29,6 +32,7 @@ class ObjectBox(
 
         lessonBox = LessonBox(boxStore)
         vocabularyBox = VocabularyBox(boxStore)
+        dbDetails = DBDetailsBox(boxStore)
 
     }
 }
