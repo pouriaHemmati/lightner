@@ -78,8 +78,6 @@ dependencies {
     kaptAndroidTest librariesTest.hiltCompiler
     // object box
     implementation librariesAndroidx.objectbox
-
-
     // dimens
     implementation libraries.ssp
     implementation libraries.sdp

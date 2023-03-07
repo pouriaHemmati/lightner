@@ -30,9 +30,5 @@ class ObjectBox(
         lessonBox = LessonBox(boxStore)
         vocabularyBox = VocabularyBox(boxStore)
 
-        if (BuildConfig.DEBUG) {
-            val started = Admin(boxStore).start(context)
-            Log.i("ObjectBoxAdmin", "Started: $started")
-        }
     }
 }
